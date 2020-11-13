@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quoteContainer">
+            <ul>
+              <div *ngFor='let quote of quotes; let i = index' class="quoteStr" #parent appHighlight>
+                <hr>
+                <li>{{quote}}</li>
+                <app-like-detail></app-like-detail> 
+              </div>    
+            </ul>
+        </div>
+      </div>
+</body>
+</html>
